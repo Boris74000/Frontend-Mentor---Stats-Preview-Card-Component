@@ -1,0 +1,11 @@
+{
+  "name": "frontendmentorstatspreviewcardcomponent",
+  "version": "1.0.0",
+  "description": "The challenge is to build out this card component and get it looking as close to the design as possible.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "author": "Charles-Boris",
+  "license": "ISC"
+}
