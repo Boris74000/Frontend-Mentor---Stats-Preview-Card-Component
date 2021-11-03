@@ -1,5 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Red+Hat+Display:wght@500;700;900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* 1 */
+  min-width: 0;
+  /* 2 */
+}
+
+html {
+  font-size: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  overflow-wrap: break-word;
+  /* 3 */
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: #212529;
+}
+
+img {
+  width: 100%;
+}
+
+p, h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 15px;
+  background-color: #090b1a;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 0;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h2, p, h1 {
+  text-align: center;
+}
+
 h1 {
-  color: red;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background-color: #1b1938;
+  width: 20rem;
+  margin: 5rem 0;
+  border-radius: 10px;
+}
+.card__img {
+  background: linear-gradient(rgba(136, 21, 208, 0.6), rgba(136, 21, 208, 0.6)), url(../images/image-header-mobile.jpg);
+  height: 14rem;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+.card > div:nth-child(2) {
+  padding: 2rem 1.5rem;
+}
+.card__title {
+  color: white;
+}
+.card__title span {
+  color: #aa5cdb;
+}
+.card__description {
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+.card__stats p {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /*# sourceMappingURL=style.css.map */
