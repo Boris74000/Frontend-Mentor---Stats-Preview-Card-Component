@@ -1,3 +1,77 @@
-h1 {
-    color: red;
+@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+$font-1: 'Inter', sans-serif;
+$font-2: 'Lexend Deca', sans-serif;
+
+$main-bg-color: hsl(233, 47%, 7%);
+$card-bg-color: hsl(244, 38%, 16%);
+$accent-color: hsl(277, 64%, 61%);
+
+$main-heading-and-stats-color: hsl(0, 0%, 100%);
+$main-paragraph-color: hsla(0, 0%, 100%, 0.75);
+$stat-headings-color: hsla(0, 0%, 100%, 0.6);
+
+body {
+    font-size: 15px;
+    background-color: $main-bg-color;
+    display: flex;
+    justify-content: center;
 }
+
+h2 {
+    color: $main-heading-and-stats-color;
+    margin-bottom: 0;
+}
+
+p {
+    color: $main-paragraph-color;
+    font-family: $font-2;
+}
+
+h2, p, h1 {
+    text-align: center;
+}
+
+h1 {
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: $card-bg-color;
+    width: 20rem;
+    margin: 5rem 0;
+    border-radius: 10px;
+    
+    &__img {
+        background: linear-gradient(rgb(136 21 208 / 60%), rgb(136 21 208 / 60%)), url(../images/image-header-mobile.jpg);
+        height: 14rem;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    > div:nth-child(2) {
+        padding: 2rem 1.5rem;
+    }
+    
+    &__title {
+        color: $main-heading-and-stats-color;
+        span {
+            color: $accent-color;
+        }
+    }
+    
+    &__description {
+        line-height: 1.8;
+        margin-bottom: 2rem;
+    }
+    
+    &__stats {
+        p{
+            color: $stat-headings-color;
+        }
+        
+    }
+}
+
