@@ -25,6 +25,7 @@ body {
   line-height: 1.5;
   background-color: #ffffff;
   color: #212529;
+  height: 100%;
 }
 
 img {
@@ -92,6 +93,42 @@ h1 {
 }
 .card__stats p {
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media (min-width: 1100px) {
+  body {
+    align-items: center;
+    height: 100vh;
+  }
+
+  h2, p, h1 {
+    text-align: start;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 78%;
+    margin: 0;
+  }
+  .card__img {
+    flex-basis: 50%;
+    border-radius: 0 10px 10px 0;
+    height: auto;
+  }
+  .card > div:nth-child(2) {
+    padding: 3rem 4rem;
+    flex-basis: 50%;
+  }
+  .card__stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card__stats div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
